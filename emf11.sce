@@ -1,0 +1,10 @@
+clc;
+clear;
+close(winsid());
+mr2=input('Enter the value of relative permeability of medium-mr2:');
+teta1=input('Enter the value of teta2 of medium-teta1:');
+teta2=input('Enter the value of teta2 of medium-teta2:');
+m1=(tand(teta1)/tand(teta2))*mr2*4*3.14e-7;
+mr1=m1/(4*3.14e-7);
+disp(mr1,'relative permeability of medium-mr1:');
+disp(m1,'permeability of medium-m1:');

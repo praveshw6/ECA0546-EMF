@@ -1,0 +1,12 @@
+clc;
+clear;
+A=input('Enter the value of capacitance area A:');
+d1=input('Enter the value of thickness of medium-1 d1:');
+d2=input('Enter the value of thickness of medium-2 d2:');
+d3=input('Enter the value of thickness of medium-3 d3:');
+er1=input('Enter the value of relative permittivity of medium-1 er1:');
+er2=input('Enter the value of relative permittivity of medium-1 er2:');
+er3=input('Enter the value of relative permittivity of medium-1 er3:');
+e0 =8.854e-12;
+C =(A * e0) / (d1/er1 + d2/er2 + d3/er3);
+disp (C, 'Capacitance of parallel plate capacitor in three different dielectric media :---Faraday' );

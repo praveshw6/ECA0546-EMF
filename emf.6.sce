@@ -1,0 +1,14 @@
+clc;
+clear;
+Q=input ('Enter the value of charge Q:');
+pointAx=input ('Enter the value of Point Ax:');
+pointAy=input ('Enter the value of Point Ay:');
+pointBx=input ('Enter the value of Point Bx:');
+pointBy=input ('Enter the value of Point By:');
+e0= 8.854e-12;
+r1=sqrt(pointAx^2 + pointAy^2);
+r2=sqrt(pointBx^2 + pointBy^2);
+v1=Q/(4* %pi * e0 * r1);
+v2=Q/(4* %pi * e0 * r2);
+EPD=v1-v2;
+disp(EPD, 'ELECTRIC POTENTIAL DIFFERENCE BETWEEN TWO POINTS:');

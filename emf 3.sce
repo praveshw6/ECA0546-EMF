@@ -1,0 +1,11 @@
+clc;
+clear;
+close(winsid());
+q = input ('Enter the value of charge q=');
+r = input ('Enter the value of distance b/w two charges r=');
+er = input ('Enter the value of relative permittivity of the medium er=');
+e0 = 8.854e-12;
+D = (q) / (4 * %pi * r^2);
+E = (q) / (4 * %pi * e0 * er * r^2);
+disp (D,'Electric Flux Density D=___ C/m^2');
+disp (E,'Electric Field E= ___ Newtons/Coulombs or V/m');

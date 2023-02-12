@@ -1,0 +1,12 @@
+clc;
+clear;
+close(winsid());
+H=input('Enter the value of magnetic field-H:');
+mr=input('Enter the value of relative permeability-mr:');
+phi=input('Enter the value of magnetic flux-phi:');
+l=input('Enter the value of rectangle length-l:');
+w=input('Enter the value of rectangle width-w:');
+Binphi=phi/(l*w);
+Binfield=H*mr*4*3.14e-7;
+disp(Binphi,' Magnetic flux density-Binphi:Wb/m^2');
+disp(Binfield,' Magnetic flux density-Binfield:Wb/m^2');
